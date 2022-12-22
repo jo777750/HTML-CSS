@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+.grid-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family:sans-serif;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 40px auto;
+  border:1px solid black;
+}
+
+.bg-red {background: tomato;}
+.bg-blue {background: royalblue;}
+.bg-green {background: lightgreen;  border:1px solid black;}
+.bg-yellow {background: khaki;  border:1px solid black;}
+
+</style>
+<h2>Example grid 1</h2>
+<div class="grid-1">
+  <div class="bg-red">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+  <div class="bg-blue">The remaining space gets filled.</div>
+</div>
+
+<h2>Example grid 2</h2>
+<div class="grid-2">
+  <div class="bg-green">Fixed width column</div>
+  
+  <div class="bg-yellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+  
+    <div class="bg-green">Fixed width column 2</div>
+	  <div class="bg-green">Fixed width column 3</div>
+	  <div class="bg-green">Fixed width column 4</div>
+
+
+</div>
+
+<div>The page continues...</div>
+
+</body>
+</html>

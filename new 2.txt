@@ -1,0 +1,4 @@
+https://drafts.csswg.org/css-transitions/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+https://ishratumar18.hashnode.dev/an-introduction-to-css-transitions
+

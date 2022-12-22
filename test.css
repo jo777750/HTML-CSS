@@ -1,0 +1,21 @@
+<style>
+body {
+//    background-image: url("paper.jpg");
+}
+
+.flex-container {
+  display: flex;
+  background-color: Blue;
+  justify-content: left;
+ 
+}
+
+.flex-container > div {
+//	display:inner-block;
+ background-color: deepskyblue;
+  margin: 8px;
+  padding: 20px;
+  font-size: 30px;
+
+}
+</style>

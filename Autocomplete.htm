@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autocomplete</title>
+	<style>
+	  button,
+    input
+    {
+		display:block;
+	    margin: 4px;
+    }
+    
+	</style>
+</head>
+<body>
+    
+	  <form id="myGeeks">
+
+
+    <label for="firstName">First Name:</label>
+    <input name="firstName" type="text" autocomplete="given-name">
+
+    <label for="lastName">Last Name:</label>
+    <input name="lastName" type="text"  autocomplete="family-name">
+
+    <label for="MiddleName">Middle Name:</label>
+    <input name="MiddleName" type="text" autocomplete="additional-name">
+
+    <label for="NickName">Nick Name:</label>
+    <input name="nickName" type="text" autocomplete="nickname">
+
+    <label for="email">Email:</label>
+    <input name="email" type="email"  autocomplete="email">
+
+    <button>Submit</button>
+
+  </form>
+
+</body>
+</html>

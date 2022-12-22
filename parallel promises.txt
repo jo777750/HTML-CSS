@@ -1,0 +1,19 @@
+console.log("==PARALLEL with await Promise.all==");
+        parallel();
+        var x=[a(),b),c(),d()]
+        function a()
+        {
+        console.log("In function a ");
+        }
+        function b(){
+        console.log("In function b ");
+        }
+        function c(){
+        console.log("In function c ");
+        }
+        function d(){
+        console.log("In function d ");
+        }
+        function e(){
+        console.log("In function e ");
+        }
