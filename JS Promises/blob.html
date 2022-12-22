@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<style>
+   body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   }
+   .result{
+      font-size: 18px;
+      font-weight: 500;
+      color: rebeccapurple;
+   }
+</style>
+</head>
+<body>
+<h1>Blob object in JavaScript</h1>
+<div class="result"></div>
+<button class="Btn">CLICK HERE</button>
+<h3>Click on the above button to create and display a blob object</h3>
+<script>
+   let resEle = document.querySelector(".result");
+   document.querySelector(".Btn").addEventListener("click", () => {
+      let blob = new Blob(["This is a sample blob"], { type: "text/plain" });
+      resEle.innerHTML = "blob.type = " + blob.type + "<br>";
+      resEle.innerHTML += "blob.size = " + blob.size + "<br>";
+	  resEle.innerHTML += "blob = " + blob.text()+ "<br>";
+	  blob.text().then(function(result) {
+	  console.log(result)
+	  resEle.innerHTML += "blob = " + result
+	  ;
+});
+
+   });
+</script>
+</body>
+</html>
+

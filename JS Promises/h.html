@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<main>
+<style>
+img{
+display:inline;}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+
+fetch(new Request("./elephant.jpg")).then(async response => {
+myBlob=await response.blob() 
+ let x = document.querySelector('.something');
+
+const objectURL = URL.createObjectURL(myBlob);
+x.src = URL.createObjectURL(myBlob);
+
+
+});
+});
+
+
+</script>
+    <h1>Fetch Request example.</h1>
+	    <img src="./potato.jpg" />
+	    <img src class="something" </img>
+	    <img src="./kiwi.jpg" />
+	    <img src="./kiwi.jpg" />
+
+</main>
+<html>
