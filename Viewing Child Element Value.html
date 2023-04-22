@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>HTML</title>
+<h4><mark>document child is h5 and h5 child is p.So Document>h5>p<mark></h4>
+<body>
+</body>
+  <script>
+
+const e4=(x1,x2)=>{console.log(x1,x2)};//define function
+e4('ABC','DEF');//call the function
+
+h5=document.createElement('h5');
+h5.textContent= "hello 123";
+
+//h5.setAttribute("id", "pa");
+h5.className= "parrot";
+//NOTE:H5ELEMENT HAS BOTH ID AND CLASS Values
+
+p6=document.createElement('p');
+p6.textContent= "456 world";
+//p6.setAttribute("id", "laugh");
+p6.className= "para";
+//NOTE:p6 ELEMENT HAS BOTH ID AND CLASS Values
+
+h5.append(p6);
+document.body.appendChild(h5);
+const e31=(x1,x2) => {x1.querySelector(x2);}
+e31(h5,'.para');
+console.log(document.getElementById("pa"));
+console.log((document.getElementById("pa")).innerText);
+//console.log(document.getElementById("pa").children);
+console.log(document.getElementById("laugh"));
+
+console.log((document.getElementById("laugh")).innerText);
+//console.log(document.getElementById("laugh").children);
+
+</script>
+</html>

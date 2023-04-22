@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .redcolor {color: red;}
+  </style>
+</head>
+<body>
+  <h5 id="position"></h5>
+  <button id="test1">Click here to show red text </button>
+  <script>
+    const btn1 = document.getElementById("test1");
+    btn1.addEventListener("click", () => {
+      a1 = document.createElement('h5');
+      a1.className = "redcolor";
+      a1.textContent = 'How are you? Red Button was clicked.';
+      document.body.append(a1);
+      document.body.append(a1);
+    });
+  </script>
+</body>
+</html>

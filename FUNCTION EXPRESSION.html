@@ -1,0 +1,64 @@
+//Note that when storing a function in a variable, you do not include the parentheses after the function name. This is because you are not calling the function, but rather storing a reference to it. If you include the parentheses, you will actually call the function and store the result of the function call in the variable, rather than the function itself.
+
+//javascript Functions are not hoisted to the top unlike normal  functions
+
+
+// 1. Define the function expression
+const myFunc = function(a, b) {
+  return a + b;
+};
+
+//  Call the function using the variable name
+const result = myFunc(3, 5);
+console.log(result); // Output: 8
+
+const multiply = function(x, y) {
+  return x * y;
+};
+
+console.log(multiply(2, 3)); // Output: 6
+
+//2. 
+const multiply = (x, y) => {
+  return x * y;
+};
+
+console.log(multiply(2, 3)); // Output: 6
+
+//3.
+
+const myFunction = function() {
+  console.log("Hello, world!");
+};
+myFunction(); // prints "Hello, world!" to the console
+
+
+//4.
+
+const myArrowFunction = () => {
+  console.log("Hello, world!");
+};
+myArrowFunction(); // prints "Hello, world!" to the console
+
+// 5.
+ 
+// function definition
+function addNumbers(a, b) {
+  return a + b;
+}
+
+// store function in variable
+var myFunc = addNumbers;
+
+// call the function using the variable
+var result = myFunc(2, 3); // result = 5
+
+//6.
+
+const add = (a, b) => a + b;
+
+console.log(add(2, 3)); // Output: 5
+
+
+
+

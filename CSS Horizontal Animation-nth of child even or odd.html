@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style>
+body {
+	background-color:#DFE1E1;
+	font-family:sans-serif;
+	 margin-left:10%;
+	}
+	/*  1st */
+a:nth-child(n+1) { 
+  color: black;
+display:inline-block;
+/*a tags are inline elements so they won't obey any height or width set in CSS unless you change the display property to block or inline-block so change to inline-block ,
+https://stackoverflow.com/questions/20022097/css-animation-not-working-for-a-tag
+*/
+  border:5px solid rebeccapurple;
+  overflow:hidden;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  animation: animate 5s ease-in 1 forwards;
+  white-space: pre;
+  /*    or */
+  /*    white-space: nowrap; */
+}
+a:nth-child(1) { 
+  border:5px solid yellow;
+  }
+a:nth-child(2n+2) { 
+  border:5px solid blue;
+  }
+a:nth-child(2n+3) { 
+  border:5px solid magenta;
+  }
+@keyframes animate{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width:290px;
+  }
+}
+	</style>
+</head>
+<body>
+    <a>A            for Apple</a>
+	<a>B  for Blue</a>
+	<a>C for    Car</a>
+	<a>D for Doctor   j</a>
+	<a>E for Egg</a>
+	<a>F for Frog</a>
+	<a>G for Girl</a>
+	<a>H for Hat</a>
+	<a>I for IceCream</a>
+	
+	<circle cx="25" cy="75" r="20"/>
+
+</body>
+</html>

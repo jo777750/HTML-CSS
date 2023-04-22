@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="wrapper">
+<mark id="em_demo">123</mark>
+<mark id="em_demo">456</mark>
+<a id="a_demo">678</a>
+<a id="a_demo">900</a>
+</h1>
+
+<button>
+Download
+</button>
+<br>
+<br>
+<br>
+<br>
+
+  <div class="box px">I am 200px wide</div>
+<br>
+<br>
+  <div class="box vw">I am 10vw wide</div>
+</body>
+<style>
+.vw {
+  width: 10vw;
+}
+.px {
+  width: 400px;
+}
+#wrapper {
+font-size: 4px;
+ }
+
+#em_demo{
+font-size: 20em;
+}
+ 
+#a_demo{
+font-size: 30em;
+}
+
+a::after{
+content:  "etc";
+}
+
+
+</style>
+<script>
+
+const myElement = document.getElementById("wrapper");
+for (const child of myElement.children) {//as per MDN need to use an array so as to get multiple child elements if existing
+console.log(typeof(child.tagName));//returnsa stringobject so cant be used by appendChild and can be used  only by append
+  document.body.append(child.tagName);
+}
+
+</script>
+</html>

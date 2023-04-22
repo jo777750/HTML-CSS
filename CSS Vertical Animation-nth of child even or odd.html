@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+body {
+	background-color:#DFE1E1;
+	font-family:sans-serif;
+	 margin-left:10%;
+	}
+
+	/*  1st */
+
+h1:nth-child(n+1) { 
+  color: red;
+  border:5px solid rebeccapurple;
+  overflow:hidden;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  animation: animate 5s ease-in 1 forwards;
+}
+
+h1:nth-child(1) { 
+  border:5px solid yellow;
+  }
+
+h1:nth-child(2n+2) { 
+  border:5px solid blue;
+  }
+
+h1:nth-child(2n+3) { 
+  border:5px solid magenta;
+  }
+
+  
+@keyframes animate{
+  0%{
+    width: 0;
+  }
+  100%{
+    width:250px;
+  }
+}
+
+#btn{
+font-size:40px;
+	font-family:sans-serif;
+margin-left:20%;
+}
+	</style>
+</head>
+
+<body>
+	<h1>A&nbsp;for&nbsp;Apple</h1>
+	<h1>B&nbsp;for&nbsp;Blue</h1>
+	<h1>C&nbsp;for&nbsp;Car</h1>
+	<h1>D&nbsp;for&nbsp;Doctor</h1>
+	<h1>E&nbsp;for&nbsp;Egg</h1>
+	<h1>F&nbsp;for&nbsp;Frog</h1>
+	<h1>G&nbsp;for&nbsp;Girl</h1>
+	<h1>H&nbsp;for&nbsp;Hat</h1>
+	<h1>I&nbsp;for&nbsp;IceCream</h1>
+
+	<button id="btn">Click for blue</button>
+
+</body>
+</html>

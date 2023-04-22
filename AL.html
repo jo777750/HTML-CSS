@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <style>
+      p{
+        border: solid green 2px;
+		margin-top:24px;
+      }
+    </style>
+  </head>
+  <body>
+  </body>
+   <script>
+ let x = document.createElement('p');
+x.style.background = "aqua";
+x.textContent = ' Click inside the box to Change background color ';
+x.id = "para1";
+console.log(x);
+document.body.appendChild(x);
+
+function changeBackgroundColor(evt) {
+  evt.currentTarget.style.background = "yellow";
+}
+//debugger;
+document.getElementById("para1").addEventListener("click", changeBackgroundColor);
+//document.getElementById("para1").removeEventListener("click", changeBackgroundColor);
+
+    </script>
+	
+</html>
