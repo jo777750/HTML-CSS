@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <style>
+p:target{border: 5px solid red;background-color:aqua;}
+a{display:block;}
+    </style>
+  </head>
+  <body>
+    
+  <a href="#first">Click here for first-block</a>
+  <a href="#second">Click here for second-block</a>
+  <a href="#third">Click here for third-block</a>
+  <a href="#fourth">Click here for fourth-block</a>
+  <a href="#fifth">Click here for fifth-block</a>
+  <a href="#sixth">Click here for sixth-block</a>
+<hr>
+
+  <b>Result-</b>
+  <p id="first">1st block</p>
+  <p id="second">2nd block</p>
+  <p id="third">3rd block</p>
+  <p id="fourth">4th block</p>
+  <p id="fifth">5th block</p>
+  <p id="sixth">6th block</p>
+  
+</body>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+var currentHash = window.location.hash;
+console.log(currentHash);
+  if (currentHash) {
+    // Remove the hash from the URL without scrolling
+    history.replaceState({}, document.title, window.location.pathname + window.location.search);
+
+    // Remove the :target styles from the element
+    var targetElement = document.querySelector(currentHash);
+    if (targetElement) {
+  //    targetElement.classList.remove('target');
+    }
+  }
+});
+
+</script>
+</html>
